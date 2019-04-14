@@ -19,6 +19,7 @@
   "homepage": "https://github.com/UBC-iGEM/Internal-wiki-2019#readme",
   "dependencies": {
     "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.4"
   }
 }

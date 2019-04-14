@@ -1,18 +1,20 @@
 /**
-* Copyright 2019 UBC iGEM
-*/
+ * Copyright 2019 UBC iGEM
+ */
 
 require('dotenv').config()
-var express = require('express');
+const path       = require('path');
+const express    = require('express');
+const app        = express();
+const port       = process.env.PORT || "3000"
+const routes     = require('./backend/routes.js')(app);
 
-var app = express();
+// Set view engine to work with html files, and set path to the fronend directory
+app.set('views', path.join(__dirname, '/frontend'));
+app.set('view engine','ejs');
+app.engine('html', require('ejs').renderFile);
 
-var port = process.env.PORT || "3000"
-
-app.get('/', function (req, res) {
-    res.send('UBC iGEM 2019 homepage')
-});
-
+// Start server on port
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
