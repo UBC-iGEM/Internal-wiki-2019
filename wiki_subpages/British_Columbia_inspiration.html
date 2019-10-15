@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset= "utf-8" />
+  <title> Team:British_Columbia - 2019.igem.org </title>
+</head>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.cover_pic{
+  background-image: url("https://2019.igem.org/wiki/images/2/25/T--british_columbia--inspiration_cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.title{
+  width: 100%;
+  padding-top: 250px;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+
+.title img{
+  width: 40%;
+  text-align: center;
+}
+
+.active{
+  color: #FFFFFF !important;
+  font-weight: 500;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.wrapper{
+  background-image:  url("https://2019.igem.org/wiki/images/4/48/T--british_columbia--general_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.wrapper{
+  display: flex;
+}
+
+.body{
+  height: 1000px;
+}
+
+.left_bar{
+  width: 15%;
+  float: left;
+  background-image: url("https://2019.igem.org/wiki/images/4/48/T--british_columbia--general_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+.right_bar{
+  width: 85%;
+  display: block;
+}
+.paralyte_logo{
+  padding-top: 20px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.paralyte_logo img{
+  width: 80%;
+  height: auto;
+}
+
+.nav_bar{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  margin-right: 2px;
+  float: right;
+  text-align: right;
+  font-size: 18px;
+  color: #000000;
+  font-weight: normal;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+.nav_bar ul li{
+  display: inline-flex;
+  list-style: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav_bar a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.avtive, .nav_bar ul li:hover{
+  color: #000000;
+}
+
+.nav_bar ul li:hover{
+  text-decoration: underline;
+}
+
+.dropdown_content{
+  display: none;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  z-index: 1;
+}
+
+.dropdown_content ul{
+  display: inline;
+}
+
+.dropdown_content ul li{
+  padding-right: 10px;
+}
+
+.dropdown_content ul li:hover{
+  text-decoration: underline;
+}
+
+.dropdown_content_Proj{
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -115px;
+  width: 700px;
+}
+
+.dropdown_content img{
+  width: 30px;
+  height: auto;
+}
+
+
+.project:hover .dropdown_content{
+  display: inline-block;
+}
+
+.project:hover .dropdown_content_Proj{
+  display: inline-block;
+}
+
+
+.dropdown_content_Team{
+  display: inline;
+  position: absolute;
+  width: 600px;
+  top:20px;
+  left: -130px;
+}
+
+.team:hover .dropdown_content{
+  display: inline;
+}
+
+.team:hover .dropdown_content_Team{
+  display: inline;
+}
+
+.dropdown_content_lab{
+  display: none;
+  position: absolute;
+  width: 600px;
+  top: 20px;
+  left: -60px;
+}
+
+.lab:hover .dropdown_content_lab{
+  display: inline;
+}
+
+.lab:hover .dropdown_content{
+  display: inline;
+}
+
+.dropdown_content:hover .dropdown_content_lab{
+  display: inline;
+}
+
+.dropdown_content_HP{
+  display: none;
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: -130px;
+  font-size: 15px;
+}
+
+.HP:hover .dropdown_content{
+  display: inline;
+}
+
+.HP:hover .dropdown_content_HP{
+  display: flex;
+}
+
+.dropdown_content:hover .dropdown_content{
+  display: inline;
+}
+
+.contact_us{
+  display: block;
+  width: 80%;
+  padding-left: 20px;
+  position: absolute;
+  top:1400px;
+  z-index: 1;
+}
+
+.contact_us img{
+  width: 10%;
+  height: auto;
+}
+
+.social_media ul li{
+  display: inline;
+  padding-right: 6px;
+}
+
+.social_media img{
+  width: 20px;
+}
+
+
+</style>
+
+
+<body>
+  <div class="cover_pic">
+    <div class="title">
+      <img src="https://2019.igem.org/wiki/images/5/56/T--british_columbia--inspiration_title.png">
+    </div>
+  </div>
+    <div class="wrapper">
+      <div class="left_bar">
+        <div class="paralyte_logo">
+          <a href="British_Columbia_home.html"> <img src="https://2019.igem.org/wiki/images/e/e0/T--british_columbia--paralyte_logo.png"></a>
+        </div>
+        <div class="contact_us">
+          <div class="ubcigem_logo">
+              <a href="#"> <img src="https://2019.igem.org/wiki/images/5/5f/T--british_columbia--ubcigem_logo.png"></a>
+          </div>
+          <div class="social_media">
+            <ul>
+                <li>
+                   <a href="https://www.facebook.com/ubcigem/" target="_blank">
+                         <span class="fa fa-facebook-official fa-2x" style="padding: 5px"></span>
+                   </a>
+                </li>
+                <li>
+                  <a href="mailto:ubcigem@gmail.com" target="_blank">
+                     <span class="fa fa-envelope fa-2x" style="padding: 5px"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:ubcigem@gmail.com" target="_blank">
+                      <span class="fa fa-envelope fa-2x" style="padding: 5px"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/ubcigem/" target="_blank">
+                     <span class="fa fa-instagram fa-2x" style="padding: 5px"></span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+            <div class="nav_bar">
+                <ul>
+                  <li class='team'>
+                      <div>
+                          <a class="nav_link active" href="team.html">TEAM</a>
+                          <div class="dropdown_content">
+                              <div class="dropdown_content_Team">
+                                  <ul>
+                                    <li>
+                                        <img src="https://2019.igem.org/wiki/images/d/d0/T--british_columbia--menu_sub_bar.png">
+                                    </li>
+                                      <li>
+                                          <a class="nav_link" href="team.html">Team</a>
+                                      </li>
+                                      <li>
+                                          <a class="nav_link" href="#">Attribution</a>
+                                      </li>
+                                      <li>
+                                          <a class="nav_link" href="#">Sponsors</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                    <li class="project">
+                        <div>
+                            <a class="nav_link" href="#">PROJECT</a>
+                            <div class="dropdown_content">
+                                <div class="dropdown_content_Proj">
+                                    <ul>
+                                      <li>
+                                          <img src="https://2019.igem.org/wiki/images/d/d0/T--british_columbia--menu_sub_bar.png">
+                                      </li>
+                                        <li>
+                                            <a class="nav_link" href="#">Inspiration</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav_link" href="#">Description</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav_link" href="#">Results</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav_link" href="#">Parts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lab">
+                        <a class="nav_link" href="#">LABORATORY</a>
+                        <div class="dropdown_content">
+                            <div class="dropdown_content_lab">
+                                <ul>
+                                  <li>
+                                      <img src="https://2019.igem.org/wiki/images/d/d0/T--british_columbia--menu_sub_bar.png">
+                                  </li>
+                                    <li>
+                                        <a class="nav_link" href="#">Protocol</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav_link" href="#">Notebook</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav_link" href="#">Safety</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='nav_bar_item'>
+                        <a class="nav_link" href="#">MODEL</a>
+                    </li>
+                    <li class='HP'>
+                        <div>
+                            <a class="nav_link" href="#">HUMAN PRACTICES</a>
+                            <div class="dropdown_content">
+                                <div class="https://2019.igem.org/wiki/images/d/d0/T--british_columbia--menu_sub_bar.png">
+                                  <div class="sub_bar">
+                                    <img src="https://2019.igem.org/wiki/images/d/d0/T--british_columbia--menu_sub_bar.png">
+                                  </div>
+                                  <div>
+                                    <ul>
+                                        <li>
+                                            <a class="nav_link" href="#">Intergrated Human Practice</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav_link" href="#">Public Outreach</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav_link" href="#">Collaboration</a>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='nav_bar_item'>
+                        <a class="nav_link" href="#">MEDALS</a>
+                    </li>
+                </ul>
+        </div>
+      </div>
+
+</body>
+
+</html>
